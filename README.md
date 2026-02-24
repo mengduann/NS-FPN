@@ -45,6 +45,6 @@ Infrared small target detection and segmentation (IRSTDS) is a critical yet chal
 </div>
 
 
-## Citation
+## TODO
 
-If you find our work useful for your research, please consider citing:
+- [ ] Release the core codes recently.
