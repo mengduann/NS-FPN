@@ -70,6 +70,14 @@ python main.py --dataset-dir /path/to/Dataset --batch-size 1 --mode test --weigh
 | NUAA-SIRST | 78.74 | 100.0 | 1.24 | [NUAA-SIRST_weights](https://drive.google.com/file/d/17zgfkbkPdLGyOLDz_MFNbUQI9J2bmgiI/view?usp=sharing) |
 * Our NS-FPN is developed based on [MSHNet](https://github.com/Lliu666/MSHNet). Thanks to Qiankun Liu.
 
-## TODO
+## Citation
 
-- [ ] Release the core codes recently.
+If you find this code useful for your research, please consider citing:
+
+```bibtex
+@article{yuan2025ns,
+  title={NS-FPN: Improving infrared small target detection and segmentation from noise suppression perspective},
+  author={Yuan, Maoxun and Meng, Duanni and Xi, Ziteng and Zhao, Tianyi and Zhao, Shiji and Dai, Yimian and Wei, Xingxing},
+  journal={arXiv preprint arXiv:2508.06878},
+  year={2025}
+}
