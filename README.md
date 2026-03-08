@@ -18,7 +18,7 @@
   </p>
 
 
-This repository is the official implementation of our paper Seeing Through the Noise: Improving Infrared Small Target Detection and Segmentation from Noise Suppression Perspective.
+This repository is the official implementation of our paper [Seeing Through the Noise: Improving Infrared Small Target Detection and Segmentation from Noise Suppression Perspective](https://arxiv.org/html/2508.06878v2).
 
 ## Overview
 
@@ -44,6 +44,31 @@ Infrared small target detection and segmentation (IRSTDS) is a critical yet chal
     <img src="./assets/visualization.png" style="width: 90%; height: auto; max-height: 80vh;" alt="NS-FPN" />
 </div>
 
+## Usage
+### Installation
+1. Create and activate the conda environment:
+```
+conda env create -f environment.yml
+```
+2. Compile the SpiralFeatureSampling_MultiScaleDeformableAttention (A.K.A. SFS) module:
+```
+cd SFS_MSDeformAttn/ops/
+sh make.sh
+```
+### Training
+```python
+python main.py --dataset-dir /path/to/Dataset --batch-size 16 --epochs 500 --lr 0.05 --mode train --warm-epoch 5
+```
+### Testing
+```python
+python main.py --dataset-dir /path/to/Dataset --batch-size 1 --mode test --weight-path /path/to/weight.pkl
+```
+### Best Weights
+| Dataset         | IoU (x10(-2)) | Pd (x10(-2))|  Fa (x10(-6)) | Download |
+| ------------- |:-------------:|:-----:|:-----:|:-----:|
+| IRSTD-1k | 69.34 | 95.58 | 8.35 | [IRSTD-1k_weights](https://drive.google.com/file/d/1agnCjpJJa3J3-Aw8XqDKtpcTA6xDuHO4/view?usp=sharing) |
+| NUAA-SIRST | 78.74 | 100.0 | 1.24 | [NUAA-SIRST_weights](https://drive.google.com/file/d/17zgfkbkPdLGyOLDz_MFNbUQI9J2bmgiI/view?usp=sharing) |
+* Our NS-FPN is developed based on [MSHNet](https://github.com/Lliu666/MSHNet). Thanks to Qiankun Liu.
 
 ## TODO
 
