@@ -18,7 +18,7 @@
   </p>
 
 
-This repository is the official implementation of our paper [Seeing Through the Noise: Improving Infrared Small Target Detection and Segmentation from Noise Suppression Perspective](https://arxiv.org/html/2508.06878v2).
+This repository is the official implementation of our paper [Seeing Through the Noise: Improving Infrared Small Target Detection and Segmentation from Noise Suppression Perspective](https://arxiv.org/html/2508.06878v2). 
 
 ## Overview
 
