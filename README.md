@@ -75,9 +75,10 @@ python main.py --dataset-dir /path/to/Dataset --batch-size 1 --mode test --weigh
 If you find this code useful for your research, please consider citing:
 
 ```bibtex
-@article{yuan2025ns,
-  title={NS-FPN: Improving infrared small target detection and segmentation from noise suppression perspective},
+@inproceedings{yuan2026seeing,
+  title={Seeing Through the Noise: Improving Infrared Small Target Detection and Segmentation from Noise Suppression Perspective},
   author={Yuan, Maoxun and Meng, Duanni and Xi, Ziteng and Zhao, Tianyi and Zhao, Shiji and Dai, Yimian and Wei, Xingxing},
-  journal={arXiv preprint arXiv:2508.06878},
-  year={2025}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={27783--27792},
+  year={2026}
 }
